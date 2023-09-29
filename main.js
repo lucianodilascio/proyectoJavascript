@@ -17,7 +17,11 @@ while (true) {
     if (!isNaN(cantidadDeseada) && cantidadDeseada > 0) {
         let costoTotal = calcularCostoTotal(cantidadDeseada);
         alert("El costo total de " + cantidadDeseada + " zapatillas es: $" + costoTotal);
-        break;
+
+        let respuesta = prompt("¿Desea comprar más zapatillas? (Sí o No)").toLowerCase();
+        if (respuesta !== "si") {
+            break; 
+        }
     } else {
         alert("La cantidad ingresada no es válida. Por favor, ingrese un número válido mayor que 0.");
     }
