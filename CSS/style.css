@@ -1,5 +1,92 @@
-#filter__input{
-    display: block; 
-    margin: auto; 
-    width: 40%
-}
+header {
+    border-bottom: 4px solid rgb(230, 7, 7);
+    background-color: black;
+  }
+  
+  header .logo {
+    width: 10rem;
+    margin-left: 100px;
+  }
+  
+  header .fuentes {
+    font-size: 1.5rem;
+    padding-left: 4rem;
+    text-transform: uppercase;
+    text-shadow: -3px 3px 2px rgb(0, 0, 0);
+  }
+  
+  header .fuentes .nav-item .nav-link {
+    margin-left: 3rem;
+  }
+  
+  header .fuentes .nav-item .nav-link:hover {
+    background-color: rgb(252, 128, 12);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+  
+  header .navbar-toggler {
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+  }
+  
+  .espacio {
+    margin-left: 3rem;
+  }
+
+  .btnColor {
+    background-color: rgb(252, 128, 12);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
+  }
+
+  .largo {
+    width: 20rem;
+  }
+
+
+  .tituloZapatillas {
+    background-color: rgb(168, 164, 164);
+    color: rgb(67, 106, 158);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem;
+    text-shadow: -3px 3px 2px rgb(0, 0, 0);
+    font-size: 50px;
+  }
+  
+  .tituloZapatillas h2 {
+    font-size: 3rem;
+  }
+  
+  .card {
+    border: none;
+  }
+  
+  .card .colorBoton {
+    background-color: red;
+    color: rgb(253, 253, 252);
+  }
+  
+  .card .colorBoton:hover {
+    background-color: rgb(235, 112, 11);
+    color: white;
+    border-color: black;
+    transition: all 0.5s;
+  }
+
+  .bckColor {
+    background-color: rgb(160, 155, 155);
+  }
+
+  .btnColor{
+    background-color: rgb(235, 112, 11);
+    color: white;
+    border-color: black;
+   }
+   .btnColor:hover {
+    background-color: rgb(235, 11, 11);
+    border-color: black;
+   }
