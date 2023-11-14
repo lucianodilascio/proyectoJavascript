@@ -1,25 +1,25 @@
 const productos = [
     {
         id: "zapatilla-1",
-        titulo: "curry",
+        titulo: "Curry",
         img: "./img/curry.png",
         precio: 80000
     },
     {
         id: "zapatilla-2",
-        titulo: "lebron",
+        titulo: "Lebron",
         img: "./img/lebron.png",
         precio: 80000
     },
     {
         id: "zapatilla-3",
-        titulo: "kobe",
+        titulo: "Kobe",
         img: "./img/kobe.png",
         precio: 85000
     },
     {
         id: "zapatilla-4",
-        titulo: "jordan",
+        titulo: "Jordan",
         img: "./img/jordan.png",
         precio: 85000
     }

@@ -1,92 +1,220 @@
 header {
-    border-bottom: 4px solid rgb(230, 7, 7);
-    background-color: black;
-  }
-  
-  header .logo {
-    width: 10rem;
-    margin-left: 100px;
-  }
-  
-  header .fuentes {
-    font-size: 1.5rem;
-    padding-left: 4rem;
-    text-transform: uppercase;
-    text-shadow: -3px 3px 2px rgb(0, 0, 0);
-  }
-  
-  header .fuentes .nav-item .nav-link {
-    margin-left: 3rem;
-  }
-  
-  header .fuentes .nav-item .nav-link:hover {
-    background-color: rgb(252, 128, 12);
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-  }
-  
-  header .navbar-toggler {
-    background-color: rgb(255, 255, 255);
-    margin: 20px;
-  }
-  
-  .espacio {
-    margin-left: 3rem;
-  }
+  border-bottom: 4px solid rgb(230, 7, 7);
+  background-color: black;
+}
 
-  .btnColor {
-    background-color: rgb(252, 128, 12);
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    
-  }
+header .logo {
+  width: 10rem;
+  margin-left: 100px;
+}
 
-  .largo {
-    width: 20rem;
-  }
+header .fuentes {
+  font-size: 1.5rem;
+  padding-left: 4rem;
+  text-transform: uppercase;
+  text-shadow: -3px 3px 2px rgb(0, 0, 0);
+}
+
+header .fuentes .nav-item .nav-link {
+  margin-left: 3rem;
+}
+
+header .fuentes .nav-item .nav-link:hover {
+  background-color: rgb(252, 128, 12);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+header .navbar-toggler {
+  background-color: rgb(255, 255, 255);
+  margin: 20px;
+}
+
+.espacio {
+  margin-left: 3rem;
+}
+
+.btnColor {
+  background-color: rgb(252, 128, 12);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+
+}
+
+.largo {
+  width: 20rem;
+}
 
 
-  .tituloZapatillas {
-    background-color: rgb(168, 164, 164);
-    color: rgb(67, 106, 158);
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 1rem;
-    text-shadow: -3px 3px 2px rgb(0, 0, 0);
-    font-size: 50px;
-  }
+.tituloZapatillas {
+  background-color: rgb(168, 164, 164);
+  color: rgb(67, 106, 158);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem;
+  text-shadow: -3px 3px 2px rgb(0, 0, 0);
+  font-size: 50px;
+}
+
+.tituloZapatillas h2 {
+  font-size: 3rem;
+}
+
+.card {
+  border: none;
+}
+
+.card .colorBoton {
+  background-color: red;
+  color: rgb(253, 253, 252);
+}
+
+.card .colorBoton:hover {
+  background-color: rgb(235, 112, 11);
+  color: white;
+  border-color: black;
+  transition: all 0.5s;
+}
+
+.bckColor {
+  background-color: rgb(160, 155, 155);
+}
+
+.btnColor {
+  background-color: rgb(235, 112, 11);
+  color: white;
+  border-color: black;
+}
+
+.btnColor:hover {
+  background-color: rgb(235, 11, 11);
+  border-color: black;
+}
+
+
+.centrado {
+  text-align: center;
+}
+
+.titulo {
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(221, 218, 218, 0.2);
+  margin-top: 10px;
+  color: rgb(88, 23, 23);
+}
+
+
+
+/*SECCION CARRITO */
+
+
+.contenedorCarrito {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.carritoVacio {
+  color: red;
+  font-weight: 500;
+  text-align: center;
+  font-size: 20px;
+}
+.carritoComprado {
+  color: red;
+  font-weight: 500;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+
+.carritoProductos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.carritoProducto {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3rem;
+background-color: white;
+color: red;
+padding: 1.5rem;
+padding-right: 3.5rem;
+margin: 30px;
+align-items: center;
+}
+
+.carritoProductoImg {
+  width: 10rem;
+  border-radius: 1rem;
+}
+
+.carritoProducto h4 {
+  font-size: 1rem;
+}
+
+.carritoProductoEliminar {
+  border: 0;
+  background-color: transparent;
+  color: red;
+}
+
+
+.carritoAcciones {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.vaciarCarrito {
+  border: 0;
+  background-color: rgb(221, 44, 44);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: rgb(230, 219, 219);
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor:pointer;
+  margin-left: 100px;
+}
+
+
+.comprarAhora{
+  border: 0;
+  background-color: grey;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: red;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor:pointer;
+  margin-right: 100px;
+  margin-bottom: 40px;
+}
+
+.carritoSumado{
+  display: flex;
   
-  .tituloZapatillas h2 {
-    font-size: 3rem;
-  }
-  
-  .card {
-    border: none;
-  }
-  
-  .card .colorBoton {
-    background-color: red;
-    color: rgb(253, 253, 252);
-  }
-  
-  .card .colorBoton:hover {
-    background-color: rgb(235, 112, 11);
-    color: white;
-    border-color: black;
-    transition: all 0.5s;
-  }
+}
 
-  .bckColor {
-    background-color: rgb(160, 155, 155);
-  }
+.carritoTotal {
+  display: flex;
+  border: 0;
+  background-color: rgb(221, 44, 44);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: rgb(230, 219, 219);
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 50px;
+  height: 55px;
+  gap: 1rem;
 
-  .btnColor{
-    background-color: rgb(235, 112, 11);
-    color: white;
-    border-color: black;
-   }
-   .btnColor:hover {
-    background-color: rgb(235, 11, 11);
-    border-color: black;
-   }
+}
+
