@@ -1,2 +1,6 @@
-const productosDelCarrito = JSON.parse(localStorage.getItem("carritoProductos"));
-console.log(productosDelCarrito)
+const productosDelCarrito = JSON.parse(localStorage.getItem("productosDelCarrito"));
+if (productosDelCarrito) {
+
+} else {
+
+}

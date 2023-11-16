@@ -1,3 +1,4 @@
+
 const productos = [
     {
         id: "zapatilla-1",
@@ -31,6 +32,7 @@ const cantidad = document.querySelector("#cantidad");
 
 function cargarProductos() {
     productos.forEach(producto => {
+        
         const div = document.createElement("div");
         div.classList.add("col-xl-3", "col-md-6", "col-sm-12", "producto");
         div.innerHTML = `
