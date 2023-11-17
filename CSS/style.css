@@ -165,6 +165,9 @@ align-items: center;
 .carritoProducto h4 {
   font-size: 1rem;
 }
+.numeritoCentrado {
+  text-align: center;
+}
 
 .carritoProductoEliminar {
   border: 0;
@@ -228,3 +231,4 @@ align-items: center;
 .oculto {
   display: none;
 }
+
