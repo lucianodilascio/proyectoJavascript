@@ -31,27 +31,42 @@ let agregarBotones = document.querySelectorAll(".agregarProducto");
 const cantidad = document.querySelector("#cantidad");
 
 function cargarProductos() {
-    productos.forEach(producto => {
-        
-        const div = document.createElement("div");
-        div.classList.add("col-xl-3", "col-md-6", "col-sm-12", "producto");
-        div.innerHTML = `
-            <div data-aos="zoom-in" class="card shadow p-3 mb-5 bg-body-tertiary rounded text-center">
-                <img src="${producto.img}" class="card-img-top" alt="${producto.titulo}">
-                <div class="card-body">
-                    <h3 class="card-title">${producto.titulo}</h3>
-                    <p class="card-text">$${producto.precio}</p>
-                    <button class="agregarProducto btnColor" id="${producto.id}">COMPRAR</button> 
-                </div>
-            </div>
-        `;
-        productosContenedor.append(div);
-    })
-    agregarBtn();
-
+    
+    fetch('./js/productos.json')
+        .then(response => {
+            
+            if (!response.ok) {
+                throw new Error('No se pudieron cargar los productos');
+            }
+            
+            return response.json();
+        })
+        .then(productos => {
+            productos.forEach(producto => {
+                const div = document.createElement("div");
+                div.classList.add("col-xl-3", "col-md-6", "col-sm-12", "producto");
+                div.innerHTML = `
+                    <div data-aos="zoom-in" class="card shadow p-3 mb-5 bg-body-tertiary rounded text-center">
+                        <img src="${producto.img}" class="card-img-top" alt="${producto.titulo}">
+                        <div class="card-body">
+                            <h3 class="card-title">${producto.titulo}</h3>
+                            <p class="card-text">$${producto.precio}</p>
+                            <button class="agregarProducto btnColor" id="${producto.id}">COMPRAR</button> 
+                        </div>
+                    </div>
+                `;
+                productosContenedor.append(div);
+            });
+            agregarBtn(); 
+        })
+        .catch(error => {
+            
+            console.error('Error al cargar los productos:', error);
+        });
 }
 
-cargarProductos(productos);
+
+cargarProductos();
 
 function agregarBtn() {
     agregarBotones = document.querySelectorAll(".agregarProducto");
